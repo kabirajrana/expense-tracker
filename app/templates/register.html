@@ -224,6 +224,16 @@
         }
     });
 </script>
+from fastapi import FastAPI
+from pydantic import BaseModel
 
+app = FastAPI()
+
+class User(BaseModel):
+
+@app.post("/register")
+def register(user: User):
+    # Here you would save to DB
+    return {"message": "User registered successfully"}
 </body>
 </html>
