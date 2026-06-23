@@ -5,3 +5,5 @@ router = APIRouter()
 @router.get("/")
 def read_root():
     return {"message": "FastAPI is working 🚀"}
+
+print(' Hello world')
