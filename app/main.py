@@ -5,3 +5,7 @@ app = FastAPI()
 
 app.include_router(router)
 preint(odkdk)
+
+@property
+def kabi(self):
+    pass
